@@ -1,0 +1,66 @@
+body {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aviso {
+    display: block;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+.jogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 60vw;
+}
+
+.como-box {
+    width: 70vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    gap: 5px;
+}
+
+.avalie-box {
+    max-width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    gap: 5px;
+}
+
+.avalie {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    max-width: 800px;
+}
+
+.form {
+    align-self: center;
+}
+
+.sobre-box{ 
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    gap: 5px;
+}
+
