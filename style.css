@@ -4,6 +4,12 @@ body {
     margin-right: auto;
 }
 
+header{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 li {
     font-size: 20px;
     font-weight: 600; 
@@ -21,8 +27,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
-    height: 800px;
+    max-width: 1000px;
+    width: 70vw;
+    height: 55vw;
+    margin-top: 100px;
 }
 
 .como-box {
