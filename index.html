@@ -20,33 +20,62 @@
             </a>
         </div>
         <nav>
-            <ul>
-                <li><a href="#jogo">Jogue</a></li>
-                <li><a href="#como">Como Jogar</a></li>
-                <li><a href="#avalie">Avalie</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+            <ul id="menu">
+                <li><a href="#jogo" onclick="clickExit()">Jogue</a></li>
+                <li><a href="#como" onclick="clickExit()">Como Jogar</a></li>
+                <li><a href="#sobre" onclick="clickExit()">Sobre</a></li>
+                <li><a href="#avalie" onclick="clickExit()">Avalie</a></li>
             </ul>
+            <div  class="sandwich-menu" onclick="clickMenu()">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+              </div>
+              <div id="exitButton" class="exit-menu" onclick="clickExit()">
+                <div class="top-left"></div>
+                <div class="top-right"></div>
+                <div class="bottom-left"></div>
+                <div class="bottom-right"></div>
+              </div>
         </nav>
     </Header>
-    <iframe class="jogo" id="jogo" src="https://scratch.mit.edu/projects/769779206/embed" allowtransparency="true" width="80%" height="402" max-width="485" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <div id="jogo"></div>
+    <iframe class="jogo"src="https://scratch.mit.edu/projects/769779206/embed" allowtransparency="true" width="80%" height="402" max-width="485" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <p class="aviso">Para uma melhor experiência vire a tela do seu celular</p> 
+
+    <div id="como"></div>
     <div class="como-box">
-        <h2 id="como">Como Jogar</h2>
+        <h2>Como Jogar</h2>
         <p>Mantenha sua saúde mental. Para iniciar/reiniciar o jogo, clique na bandeira verde. Use a barra de espaço para conseguir desviar dos obstáculos. Tente chegar o mais longe possível. Mas lembre-se, com ajuda consegue-se ir bem mais longe.</p>
     </div>
-       
+
+    <div id="sobre"></div>
     <div class="sobre-box">
-        <h2 id="sobre">Sobre</h2>
+        <h2>Sobre</h2>
         <p>Inspirado no jogo Flappy Bird, Contra tudo foi desenvolvido por Álex Micaela de Olivera Fidelis, graduanda em Ciência da Computação - UFCG para a disciplina de Jogos Digitais.</p>
     </div>
+
+    <div id="avalie"></div>
     <div class="avalie-box">
         <div class="avalie">
-            <h2 id="avalie">Avalie</h2>
+            <h2>Avalie</h2>
             <p>Deixe sua a valiação do jogo através do formulário a seguir:</p>
         </div>
         <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLScl1Jpn9WVQdctqcBDmQgk68ggItje5vuxHztN2EeuZovhf5w/viewform?embedded=true" width="640" height="1894" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
     </div>
 
     <footer>created by <u>alexmof</u></footer>
+
+    <script>
+        function clickMenu() {
+          menu.style.left = "0vw"
+          exitButton.style.display = "grid"
+        }
+    
+        function clickExit() {
+          exitButton.style.display = "none"
+          menu. style.left = "100vw"
+        }
+      </script>
 </body>
 </html>

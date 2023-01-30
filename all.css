@@ -1,6 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: .8em;
+}
+
 *{
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
