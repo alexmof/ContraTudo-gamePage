@@ -8,6 +8,10 @@
     color: white;
 }
 
+.aviso {
+    color: rgb(218, 25, 25);
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -32,11 +36,22 @@ header{
     box-shadow: 3px 3px 3px #3b8e94;
 }
 
-header a {
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+li {
+    position: relative;
+    box-sizing: border-box;
     transition: all 400ms ease;
 }
 
-header a:before {
+li:before {
     content: '';
     position: absolute;
     top: 30px;
@@ -47,7 +62,7 @@ header a:before {
     transition: all 1s ease;
 }
 
-header a:hover:before {
+li:hover:before {
     width: 100%;
     font-weight: 700;
 }
@@ -81,14 +96,14 @@ a {
     text-decoration: none;
 }
 
-menu {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     gap: 20px;
 }
 
-menu > a {
+nav > a {
     font-weight: 600;
 }
 
