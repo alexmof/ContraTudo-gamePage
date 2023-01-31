@@ -16,10 +16,6 @@ html {
     color: white;
 }
 
-.aviso {
-    color: rgb(218, 25, 25);
-}
-
 body {
     display: flex;
     flex-direction: column;
