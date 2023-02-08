@@ -42,8 +42,6 @@
     <div id="jogo"></div>
     <iframe class="jogo"src="https://scratch.mit.edu/projects/769779206/embed" allowtransparency="true" width="80%" height="402" max-width="485" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
-    <video id="video"></video>
-
     <div id="como"></div>
     <div class="como-box">
         <h2>Como Jogar</h2>
@@ -77,17 +75,6 @@
           exitButton.style.display = "none"
           menu. style.left = "100vw"
         }
-    </script>
-    <script>
-        navigator.mediaDevices.getUserMedia({video: true})
-        .then(function (mediaStream) {
-            const video = document.querySelector('#video');
-            video.srcObject = mediaStream;
-            video.play();
-        })
-        .catch(function (err) {
-            console.log('Não há permissões para acessar a webcam')
-        })
     </script>
 </body>
 </html>
